@@ -1,31 +1,4 @@
 # hackathon-manager
-
-Django application that performs CRUD (Create, Read, Update, Delete) operations on a postgress database using a REST API.
-
-Python version used : `3.10.6`
-
-## Setup
-1. Clone the repository
-2. Create a virtual environment
-3. Install the requirements
-4. Create a `.env` file inside `hackathon_manager` folder and add the following variables
-```bash
-DB_URL=`url of database`
-DB_USER=`username of database`
-DB_PASSWORD=`password of database`
-```
-
-To install the required packages
-```bash
-pip  install -r requirements.txt
-```
-To Run the app
-```bash
-python manage.py runserver
-```
-
-The app will be availiable on http://localhost:8000
-
 ## API Endpoints
 1. GET `/api/hackathons/` - Get all hackathons
 2. GET `/api/hackathons/<hackathon_id>` - Get a specific hackathon
@@ -40,5 +13,3 @@ The app will be availiable on http://localhost:8000
 11. POST `/auth/register/` - Register a new user
 12. POST `/auth/login/` - Login a user
 13. POST `/auth/login/refresh` - Refresh a user's access token
-14. GET `hackathons/user/atleastone/` -  Get all the users(participants) who have enrolled in atleast one hackathon
-15. GET `hackathons/user/notone/` -  Get all the users(participants) who have not enrolled in a single hackathon
